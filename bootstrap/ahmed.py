@@ -1,3 +1,4 @@
+
 import re
 print("WELCOME TO BRIGHTON UNIVERSITY, LOGIN WITH YOUR DETAILS")
 userName=input()
@@ -10,9 +11,10 @@ while len(userName)<12 or len(password)<12:
     print("Username or Password is incorrect: please re-login")
     userName=input()
     password=input()
-while re.search("[a-z]", password) and re.search("[A-Z]", password) and re.search("[0-9]", password):
+if re.search("[a-z]", password) and re.search("[A-Z]", password) and re.search("[0-9]", password):
     print("Password is strong")
-    break
+else:
+    print("Username must contain uppercase, lowercase and digit")
     password=input()
 password2=input("confirm password:  ")
 while password2!=password:
