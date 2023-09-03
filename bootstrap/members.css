@@ -5,33 +5,14 @@ ul li:hover {
   transform: scale(1.1);
 }
 
-.stake {
-  object-fit: cover;
-  height: 45vh;
-  width: 100%;
-  border-radius: 10px;
-}
-.stakehead {
-  text-align: center;
-  font-family: garamond;
-}
 .card {
-  border-radius: 10%;
-  font-family: garamond;
+  border-bottom-right-radius: 7%;
+  transition: 0.5s;
 }
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
 }
 
-.card-img-top {
-  border-radius: 5%;
-  height: 45vh;
-  width: 100%;
-  object-fit: cover;
-}
-
-.video-fluid {
-  width: 100%;
-  height: 100%;
-  border-radius: 5%;
+#bg {
+  background-image: url(formbg.jpg);
 }
